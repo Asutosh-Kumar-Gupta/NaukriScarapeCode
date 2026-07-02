@@ -1,0 +1,105 @@
+{
+  "name": "Asutosh Kumar Gupta",
+  "email": "gupta.ashu265@gmail.com",
+  "phone": "+917278262977",
+  "location": "Bengaluru, India",
+  "total_experience_years": 6,
+  "current_role": "Senior Software Engineer",
+  "current_company": "ConcertAI",
+  "expected_salary_lpa": 35,
+  "notice_period_days": 30,
+  "min_salary_lpa": 25,
+  "summary": "Experienced Full Stack Python Developer with 5.5+ years of expertise in software development, system design, and machine learning engineering. Strong focus on Python, React.js, Databricks AIML Ops, and cloud-native architectures (AWS, Kubernetes). Proven track record: reduced manual ML deployment intervention by 60%, improved cloud cost efficiency by 30%, reduced API response times by 30%. Hands-on experience in Generative AI, LLMs, RAG, LangChain, LangGraph, prompt engineering, CI/CD automation, and large-scale data processing across healthcare and fintech domains.",
+  "skills": {
+    "languages": ["Python", "JavaScript", "TypeScript", "SQL"],
+    "frameworks": ["FastAPI", "Django", "React.js", "LangChain", "LangGraph", "MaterialUI", "Apache Beam"],
+    "ai_ml": ["Generative AI", "LLMs", "RAG", "AI Agents", "Prompt Engineering", "MLOps", "ML Pipelines", "Databricks", "LangChain", "LangGraph", "AWS Bedrock"],
+    "cloud": ["AWS", "GCP", "AWS S3", "AWS RDS", "AWS EMR", "AWS Bedrock", "Databricks"],
+    "devops": ["Docker", "Kubernetes", "Jenkins", "GitHub Actions", "CI/CD", "Helm", "Git"],
+    "databases": ["PostgreSQL", "MySQL", "Redis", "AWS Redshift"],
+    "architecture": ["Microservices", "REST APIs", "Event-Driven Architecture", "System Design", "RabbitMQ", "ETL"]
+  },
+  "experience": [
+    {
+      "company": "ConcertAI",
+      "role": "Senior Software Engineer",
+      "duration": "02/2024 - Present",
+      "years": 2,
+      "highlights": [
+        "Led design and development of scalable MLOps pipelines using RabbitMQ, Redshift, FastAPI, Kubernetes, and Helm",
+        "Automated ML pipeline deployments on Databricks AIML Ops and AWS, reducing manual intervention by 60% and cloud cost by 30%",
+        "Built GenAI products (FRM and GTM) using LLMs, LangGraph, and prompt engineering for ML lifecycle management",
+        "Produced architecture and design artifacts for complex ML workflows ensuring production resiliency and compliance"
+      ]
+    },
+    {
+      "company": "BankSathi",
+      "role": "Senior Software Engineer",
+      "duration": "03/2023 - 02/2024",
+      "years": 1,
+      "highlights": [
+        "Architected end-to-end financial product platform using FastAPI, RabbitMQ, AWS Redshift and scalable DB architectures",
+        "Optimised API performance achieving ~30% reduction in response times and improved data consistency",
+        "Implemented CI/CD pipelines (Jenkins/GitHub Actions), improving release frequency by 40% with zero-downtime deployments",
+        "Delivered 10+ high-impact features driving 35% increase in user engagement; improved defect detection by 25%"
+      ]
+    },
+    {
+      "company": "ZOOMRX Healthcare Technology Solutions Pvt. Ltd",
+      "role": "Software Development Engineer",
+      "duration": "03/2022 - 03/2023",
+      "years": 1,
+      "highlights": [
+        "Redesigned critical APIs using FastAPI and Django, improving data retrieval time by 40%",
+        "Optimised backend ETL pipelines using Apache Beam, processing 500GB+ of healthcare data daily",
+        "Designed and developed React-based UI to trigger and monitor ETL pipelines"
+      ]
+    },
+    {
+      "company": "Altimetrik India Pvt Ltd",
+      "role": "Software Engineer",
+      "duration": "11/2020 - 03/2022",
+      "years": 2,
+      "highlights": [
+        "Led end-to-end development of transaction-based software using Django and FastAPI",
+        "Built cloud-native payment data pipelines on GCP with security, reliability, and cost efficiency focus",
+        "Implemented CI/CD pipelines with Jenkins, increasing developer productivity by 30%",
+        "Developed reusable React components improving code maintainability and user experience"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "BankSathi Fintech",
+      "duration": "02/2023 - 03/2024",
+      "description": "Banking and fintech application for financial services. Owned end-to-end product lifecycle including system design, coding, database administration, and debugging."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Engineering in Computer Science",
+      "institution": "Visvesvaraya Technological University (VTU)",
+      "location": "Bengaluru, India",
+      "year": 2020
+    }
+  ],
+  "certifications": [],
+  "key_achievements": [
+    "Automated ML pipeline deployments reducing manual tasks by 60% and improving cost efficiency by 30%",
+    "Enhanced API performance achieving 30% reduction in response times",
+    "Delivered 10+ high-impact features increasing user engagement by 35%"
+  ],
+  "preferred_roles": [
+    "Senior Software Engineer",
+    "Staff Software Engineer",
+    "Backend Engineer",
+    "Full Stack Engineer",
+    "Python Developer",
+    "MLOps Engineer",
+    "GenAI Engineer",
+    "AI Platform Engineer",
+    "Software Development Engineer"
+  ],
+  "preferred_locations": ["Bengaluru", "Remote", "Hybrid"],
+  "open_to_relocate": false
+}

@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  naukribot:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./screenshots:/app/screenshots
+      - ./resume:/app/resume
+    restart: unless-stopped

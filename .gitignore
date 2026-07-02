@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Secrets & session
+.env
+data/naukri_session.json
+
+# Runtime output
+data/*.db
+logs/
+screenshots/
+
+# macOS
+.DS_Store
