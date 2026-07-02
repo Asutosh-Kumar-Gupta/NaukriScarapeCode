@@ -34,8 +34,8 @@ class Skills(BaseModel):
 
     def all_skills(self) -> list[str]:
         result = []
-        for field in self.model_fields:
-            result.extend(getattr(self, field))
+        for field_name in self.model_fields:
+            result.extend(getattr(self, field_name))
         return list(set(result))
 
 

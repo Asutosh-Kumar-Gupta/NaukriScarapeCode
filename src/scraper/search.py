@@ -138,8 +138,20 @@ def _parse_api_response(data: dict) -> list[SearchResult]:
         exp      = _placeholder(placeholders, "experience")
         salary   = _placeholder(placeholders, "salary")
 
-        skills_raw = job.get("tagsAndKeywords") or job.get("skillsAndKeywords") or []
-        skills = ", ".join(skills_raw) if isinstance(skills_raw, list) else str(skills_raw)
+        # Skills: Naukri uses "tagsAndSkills" (comma string) in the actual API
+        skills_raw = (
+            job.get("tagsAndSkills")           # ← real field name from API
+            or job.get("tagsAndKeywords")
+            or job.get("skillsAndKeywords")
+            or []
+        )
+        skills = skills_raw if isinstance(skills_raw, str) else ", ".join(skills_raw)
+
+        # Job description is included inline in search results
+        description = (
+            job.get("jobDescription", "")      # ← real field name from API
+            or job.get("description", "")
+        )
 
         company    = job.get("companyName", "")
         posted     = job.get("footerPlaceholderLabel", "") or job.get("createdDate", "")
@@ -147,7 +159,8 @@ def _parse_api_response(data: dict) -> list[SearchResult]:
 
         footer = str(posted).lower()
         easy = bool(
-            job.get("easyApplyAction")
+            job.get("jobApplyType") == "quickApply"   # ← real field name from API
+            or job.get("easyApplyAction")
             or job.get("isEasyApply")
             or job.get("quickApply")
             or job.get("applyType") in ("EASY", "QUICK")
@@ -168,6 +181,7 @@ def _parse_api_response(data: dict) -> list[SearchResult]:
             experience=exp,
             salary=salary,
             skills=skills,
+            description=description,
             url=url,
             posted_date=str(posted),
             applicant_count=applicants,

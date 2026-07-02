@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import re
 from datetime import datetime
 
 from loguru import logger
@@ -79,8 +80,8 @@ async def run_pipeline() -> dict:
                     continue
 
                 # Fetch JD if description is empty
-                description = result.description
-                if not description:
+                description = re.sub(r"<[^>]+>", " ", result.description or "")
+                if not description.strip():
                     description = await fetch_job_description(page, result.url)
 
                 # Score with keyword matcher (synchronous, no API)

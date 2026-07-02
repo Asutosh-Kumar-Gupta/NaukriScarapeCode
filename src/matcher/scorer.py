@@ -43,6 +43,10 @@ _COMMON_SKILLS = {"python", "sql", "git", "rest", "docker", "aws", "html", "css"
 
 
 def _normalise(text: str) -> str:
+    # Strip HTML tags before matching so <p>Python</p> → "python"
+    text = re.sub(r"<[^>]+>", " ", text)
+    # Collapse extra whitespace
+    text = re.sub(r"\s+", " ", text)
     return text.lower()
 
 
